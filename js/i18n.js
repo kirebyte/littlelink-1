@@ -27,7 +27,7 @@ const translations = {
     
     // Footer
     'footer.privacy': 'Privacy Policy',
-    'footer.buildYourOwn': 'Build your own by forking',
+    'footer.copyright': 'Modified by FoxyByte Labs - 2026 Nahuallis All Rights Reserved',
     'footer.rights': 'All rights reserved.',
     
     // Button sections
@@ -111,7 +111,7 @@ const translations = {
     
     // Footer
     'footer.privacy': 'Política de Privacidad',
-    'footer.buildYourOwn': 'Crea el tuyo haciendo fork de',
+    'footer.copyright': 'Modificado por FoxyByte Labs - 2026 Nahuallis Todos los Derechos Reservados',
     'footer.rights': 'Todos los derechos reservados.',
     
     // Button sections
