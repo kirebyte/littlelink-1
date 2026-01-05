@@ -94,3 +94,33 @@
     transform: none;
   }
 }
+
+/* Button sections */
+.button-section {
+  margin-top: 40px;
+}
+
+.button-section:first-of-type {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .button-section {
+    margin-top: 32px;
+  }
+  
+  .section-title {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="theme-auto" lang="en">
+<html class="theme-auto" lang="es">
 
   <head>
     <meta charset="utf-8">
@@ -15,91 +15,104 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/i18n.css">
+    
+    <!-- i18n Script -->
+    <script src="js/i18n.js" defer></script>
   </head>
 
   <body>
+    <!-- Language Selector -->
+    <div class="language-selector-wrapper">
+      <select id="language-selector" class="language-selector" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+
     <div class="container-left" role="main">
       <div class="column">
         <nav role="navigation">
-          <a href="index.html" aria-label="Back to homepage">← Back to main page</a>
+          <a href="index.html" aria-label="Back to homepage" data-i18n="privacy.backLink">← Back to main page</a>
         </nav>
 
-        <h1>Privacy Policy</h1>
-        <p><em>Last updated: January 5, 2026</em></p>
+        <h1 data-i18n="privacy.title">Privacy Policy</h1>
+        <p><em data-i18n="privacy.lastUpdated">Last updated: January 5, 2026</em></p>
 
         <section aria-labelledby="intro-heading">
-          <h2 id="intro-heading">Introduction</h2>
-          <p>Welcome to Kitsuneando! This privacy policy explains how we handle information when you visit this page and interact with our content across various platforms.</p>
-          <p>We are committed to protecting your privacy and being transparent about any data collection.</p>
+          <h2 id="intro-heading" data-i18n="privacy.intro.heading">Introduction</h2>
+          <p data-i18n="privacy.intro.p1">Welcome to Kitsuneando! This privacy policy explains how we handle information when you visit this page and interact with our content across various platforms.</p>
+          <p data-i18n="privacy.intro.p2">We are committed to protecting your privacy and being transparent about any data collection.</p>
         </section>
 
         <section aria-labelledby="data-collection-heading">
-          <h2 id="data-collection-heading">Information We Collect</h2>
-          <p>This simple link page is designed to minimize data collection. We may collect:</p>
+          <h2 id="data-collection-heading" data-i18n="privacy.dataCollection.heading">Information We Collect</h2>
+          <p data-i18n="privacy.dataCollection.intro">This simple link page is designed to minimize data collection. We may collect:</p>
           <ul role="list">
-            <li><strong>Basic Analytics:</strong> Page views, referral sources, and general location data (country/region level only) through standard web hosting analytics</li>
-            <li><strong>No Personal Information:</strong> We do not collect names, email addresses, or any personally identifiable information directly through this page</li>
+            <li><strong data-i18n="privacy.dataCollection.analytics">Basic Analytics:</strong> <span data-i18n="privacy.dataCollection.analyticsDesc">Page views, referral sources, and general location data (country/region level only) through standard web hosting analytics</span></li>
+            <li><strong data-i18n="privacy.dataCollection.noPersonal">No Personal Information:</strong> <span data-i18n="privacy.dataCollection.noPersonalDesc">We do not collect names, email addresses, or any personally identifiable information directly through this page</span></li>
           </ul>
         </section>
 
         <section aria-labelledby="external-content-heading">
-          <h2 id="external-content-heading">Third-Party Platforms</h2>
-          <p>When you click on links to external platforms (Twitter/X, TikTok, Ko-fi, etc.), you will be subject to those platforms' privacy policies:</p>
+          <h2 id="external-content-heading" data-i18n="privacy.external.heading">Third-Party Platforms</h2>
+          <p data-i18n="privacy.external.intro">When you click on links to external platforms (Twitter/X, TikTok, Ko-fi, etc.), you will be subject to those platforms' privacy policies:</p>
           
-          <h3>Social Media Platforms</h3>
+          <h3 data-i18n="privacy.external.socialMedia">Social Media Platforms</h3>
           <ul role="list">
-            <li><strong>Twitter/X:</strong> <a href="https://twitter.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
-            <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></li>
-            <li><strong>Ko-fi:</strong> <a href="https://more.ko-fi.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><strong>Twitter/X:</strong> <a href="https://twitter.com/privacy" target="_blank" rel="noopener" data-i18n="privacy.external.privacyPolicy">Privacy Policy</a></li>
+            <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener" data-i18n="privacy.external.privacyPolicy">Privacy Policy</a></li>
+            <li><strong>Ko-fi:</strong> <a href="https://more.ko-fi.com/privacy" target="_blank" rel="noopener" data-i18n="privacy.external.privacyPolicy">Privacy Policy</a></li>
           </ul>
 
-          <h3>Content & AI Tools</h3>
-          <p>Our content is created using various AI tools. Any AI-generated content shown on our platforms does not contain or process your personal data.</p>
+          <h3 data-i18n="privacy.external.contentTools">Content & AI Tools</h3>
+          <p data-i18n="privacy.external.contentToolsDesc">Our content is created using various AI tools. Any AI-generated content shown on our platforms does not contain or process your personal data.</p>
         </section>
 
         <section aria-labelledby="hosting-heading">
-          <h2 id="hosting-heading">Hosting and Infrastructure</h2>
-          <p>This website is hosted using standard web hosting services. These services may collect:</p>
+          <h2 id="hosting-heading" data-i18n="privacy.hosting.heading">Hosting and Infrastructure</h2>
+          <p data-i18n="privacy.hosting.intro">This website is hosted using standard web hosting services. These services may collect:</p>
           <ul role="list">
-            <li>IP addresses (for security and basic analytics)</li>
-            <li>Browser type and version</li>
-            <li>Access times and referring website addresses</li>
+            <li data-i18n="privacy.hosting.ip">IP addresses (for security and basic analytics)</li>
+            <li data-i18n="privacy.hosting.browser">Browser type and version</li>
+            <li data-i18n="privacy.hosting.access">Access times and referring website addresses</li>
           </ul>
-          <p>This data is used solely for maintaining site security and performance.</p>
+          <p data-i18n="privacy.hosting.usage">This data is used solely for maintaining site security and performance.</p>
         </section>
 
         <section aria-labelledby="cookies-heading">
-          <h2 id="cookies-heading">Cookies</h2>
-          <p>This page uses minimal or no cookies. Your browser's theme preference (light/dark mode) may be stored locally in your browser but is not transmitted to any server.</p>
+          <h2 id="cookies-heading" data-i18n="privacy.cookies.heading">Cookies</h2>
+          <p data-i18n="privacy.cookies.desc">This page uses minimal or no cookies. Your browser's theme preference (light/dark mode) may be stored locally in your browser but is not transmitted to any server.</p>
         </section>
 
         <section aria-labelledby="content-heading">
-          <h2 id="content-heading">User-Generated Content</h2>
-          <p>If you interact with our content on social media platforms (comments, likes, shares), that interaction is governed by the respective platform's privacy policy, not ours.</p>
+          <h2 id="content-heading" data-i18n="privacy.userContent.heading">User-Generated Content</h2>
+          <p data-i18n="privacy.userContent.desc">If you interact with our content on social media platforms (comments, likes, shares), that interaction is governed by the respective platform's privacy policy, not ours.</p>
         </section>
 
         <section aria-labelledby="children-heading">
-          <h2 id="children-heading">Children's Privacy</h2>
-          <p>Our content is intended for general audiences. We do not knowingly collect information from children under 13.</p>
+          <h2 id="children-heading" data-i18n="privacy.children.heading">Children's Privacy</h2>
+          <p data-i18n="privacy.children.desc">Our content is intended for general audiences. We do not knowingly collect information from children under 13.</p>
         </section>
 
         <section aria-labelledby="changes-heading">
-          <h2 id="changes-heading">Changes to This Policy</h2>
-          <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+          <h2 id="changes-heading" data-i18n="privacy.changes.heading">Changes to This Policy</h2>
+          <p data-i18n="privacy.changes.desc">We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
         </section>
 
         <section aria-labelledby="contact-heading">
-          <h2 id="contact-heading">Contact</h2>
-          <p>If you have questions about this privacy policy, you can reach us through:</p>
+          <h2 id="contact-heading" data-i18n="privacy.contact.heading">Contact</h2>
+          <p data-i18n="privacy.contact.intro">If you have questions about this privacy policy, you can reach us through:</p>
           <ul role="list">
+            <li><span data-i18n="privacy.contact.email">Email:</span> <a href="mailto:privacy@nahualis.com" id="contact-email">privacy@nahualis.com</a></li>
             <li>Twitter/X: <a href="https://twitter.com/Kitsuneando" target="_blank" rel="noopener">@Kitsuneando</a></li>
-            <li>Location: Mérida, México</li>
+            <li data-i18n="privacy.contact.location">Location: México</li>
           </ul>
         </section>
 
         <footer>
-          <p>Build your own by forking <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink.</a></p>
-          <p>© 2026 Kitsuneando. All rights reserved.</p>
+          <p><span data-i18n="footer.buildYourOwn">Build your own by forking</span> <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink.</a></p>
+          <p>© 2026 Kitsuneando. <span data-i18n="footer.rights">All rights reserved.</span></p>
         </footer>
       </div>
     </div>
