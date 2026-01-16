@@ -36,6 +36,11 @@ const translations = {
     'section.content': 'Watch My Content',
     'section.fans': 'Fandom & Lore',
     
+    // Promotional section
+    'promo.heading': 'WANT YOUR OWN PAGE?',
+    'promo.subheading': 'Custom link pages for creators',
+    'promo.button': '✨ Get Your Quote',
+    
     // Language selector
     'language.select': 'Language',
     'language.en': 'English',
@@ -119,6 +124,11 @@ const translations = {
     'section.support': 'Apoya Mi Trabajo',
     'section.content': 'Mira Mi Contenido',
     'section.fans': 'Fandom y Lore',
+    
+    // Promotional section
+    'promo.heading': '¿QUIERES TU PROPIA PÁGINA?',
+    'promo.subheading': 'Páginas de enlaces personalizadas para creadores',
+    'promo.button': '✨ Solicita tu Cotización',
     
     // Language selector
     'language.select': 'Idioma',
